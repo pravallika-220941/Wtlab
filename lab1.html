@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="changetext">original para</p>
+            
+        <button onclick="altertext()">alter</button>
+        <button onclick="addtext()">text add</button>
+        <button onclick="removetext()">remov text</button>
+        <div id="container"></div>
+        <!-- task-5 -->
+        <p id="para">this para styled with javascript</p>
+        <button onclick="changestyle()">chnage style</button>
+        <button onclick="togglestyle()">toggle style</button>
+        <!-- task-6 -->
+         <p id="hoverText"
+       onmouseover="mouseOver()"
+       onmouseout="mouseOut()">
+       Hover over this text
+    </p>
+
+ <!-- task-7 -->
+  <button onclick="greetUser()">Greet Me</button>
+    <p id="greeting"></p>
+
+    <hr>
+
+    <!-- Form Validation -->
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- Print Button -->
+    <button onclick="printPage()">Print Page</button>
+  
+        <script>
+            //task-1
+            let a=10;
+            var b=15;
+            const c=1;
+
+            //task-2
+
+            function display(){
+                console.log("welcome to my website");
+            }
+            display();
+            const arrowfn = () =>{
+                console.log("welcome to arrow fn");
+            }
+            arrowfn();
+
+            function add(){
+                let r=a+b;
+                console.log(r);
+            }
+            add();
+
+            function sub(){
+                let s=b-a;
+                console.log(s);
+            }
+            sub();
+            //task-3
+            alert("this is an alert");
+            var name=prompt("please enter ur name:");
+            document.write(name);
+            console.log(name);
+
+            //task-4
+            function altertext(){
+                document.getElementById("changetext").innerHTML="the text has changed";
+                
+            }
+            function addtext(){
+                document.getElementById("container").innerHTML="the text added";
+            }
+            function removetext(){
+                document.getElementById("container").innerHTML="";
+            }
+            //task-5
+            function changestyle(){
+                let p =document.getElementById("para");
+                p.style.color="white";
+                p.style.backgroundColor="blue";
+                p.style.fontSize="22px";
+            }
+                let isStyled = false;
+        function togglestyle() {
+            let p = document.getElementById("para");
+
+            if (isStyled) {
+                p.style.color = "black";
+                p.style.backgroundColor = "transparent";
+                p.style.fontSize = "16px";
+            } else {
+                p.style.color = "yellow";
+                p.style.backgroundColor = "green";
+                p.style.fontSize = "24px";
+            }
+
+            isStyled = !isStyled;
+        }
+        // task-6
+        function mouseOver() {
+            document.getElementById("hoverText").style.color = "red";
+        }
+
+        
+        function mouseOut() {
+            document.getElementById("hoverText").style.color = "black";
+        }
+
+        
+        function formSubmit() {
+            console.log("Form has been submitted");
+        }
+        //task-7
+        function greetUser() {
+            let name = prompt("Enter your name:");
+            document.getElementById("greeting").innerHTML =
+                "Hello, " + name + "! Welcome 😊";
+        }
+
+        // Form validation
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if (name === "" || email === "") {
+                alert("All fields are required!");
+                return false;
+            }
+            alert("Form submitted successfully!");
+            return true;
+        }
+
+        
+        function printPage() {
+            window.print();
+        }
+    </script>
+            
+
+
+        </script>
+    </body>
+</html>
