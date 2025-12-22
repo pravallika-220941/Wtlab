@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    background-color:rgb(18, 18, 59);
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c0bbbb;
+}
+.cyber{
+    height: 60px;
+    width: 70px;
+    border-radius: 50%;
+    
+
+}
+.logo_container{
+    margin-left: 6%;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+.nav_bar{
+    color: white;
+    min-width: 500px;
+    justify-content: center;
+}
+#quote{
+    font-style: inherit;
+}
+nav{
+      background-color: #0b0c0c;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+}
+nav a {
+      color: rgb(241, 242, 245);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+nav a:hover {
+      
+      border-bottom: 3px solid rgb(18, 18, 59);
+    }
+nav .loginform{
+    color: rgb(241, 242, 245);
+      text-decoration: none;
+      font-weight: bold;
+}
+.container {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+.hero {
+      background-color: #e8f1f8;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+.hero h2 {
+      color: rgb(18, 18, 59);
+    }
+.cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+.card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.card h3 {
+      color: #1d2731;
+    }
+footer {
+      background-color: rgb(18, 18, 59);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+#sidebar-toggle {
+    display: none;
+}
+
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    right: 20px;
+    font-size: 26px;
+    background-color: #0f0f18;
+    border-radius: 50px;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 4px;
+}
+
+
+.sidebar {
+    height: 100vh;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    right: -220px;
+    left:auto;
+    background-color: #1e1e2f;
+    padding-top: 80px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #5757a6;
+    color: white;
+}
+
+
+#sidebar-toggle:checked ~ .sidebar {
+    right: 0;
+}
+.login-hover {
+    position: relative;
+}
+.login-text {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.login-box {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #1e1e2f;
+    padding: 15px;
+    width: 230px;
+    display: none;
+}
+
+
+.login-hover:hover .login-box {
+    display: block;
+}
+form {
+    max-width: 400px;
+    margin: 30px auto;
+}
+#contact {
+    text-align: center;
+    color: rgb(18, 18, 59);
+    margin-top: 50px;
+}
+form {
+    max-width: 450px;
+    margin: 20px auto 50px;
+    padding: 20px;
+    background-color: #e8f1f8;
+    border-radius: 8px;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #0f123a;
+}
+button {
+    padding: 8px 15px;
+    background-color: rgb(18, 18, 59);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+}
