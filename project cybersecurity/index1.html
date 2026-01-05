@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+  
+    <header>
+        <div class="logo_container">
+            <a href="#"><img class="cyber" src="images/cyber logo.webp" alt="Cyber"></a>
+            
+
+
+
+        </div>
+        <div class="nav_bar">
+            <h1>Cybersecurity Awareness</h1>
+            <p id="quote">Stay Safe. Stay Secure. Stay Informed.</p>
+        </div>
+        <input type="checkbox" id="sidebar-toggle">
+          <label for="sidebar-toggle" class="toggle-btn">
+        ☰
+        </label>
+        <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="#" onclick="showStatus()">Website Status</a>
+
+
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+        </div>
+      
+       
+      
+        
+
+
+    </header>
+    <nav>
+             <a href="#">Home</a>
+             <a href="#">Threats</a>
+             <a href="#" >Best Practices</a>
+             <a href="#" onclick="showResourcesAlert()">Resources</a>
+
+             <a href="#contact" >Contact Us</a>
+
+              
+  </nav>
+  <div class="container">
+    <div class="hero">
+      <h2>Why Cybersecurity Matters</h2>
+      <p>
+        Cybersecurity awareness helps protect your personal data, devices, and
+        online identity from cyber threats such as phishing, malware, and data
+        breaches.
+      </p>
+    </div>
+      <div class="cards">
+         <div class="card">
+        <h3>Strong Passwords</h3>
+        <p>
+          Use long, unique passwords and enable multi-factor authentication to
+          secure your accounts.
+        </p>
+      </div>
+       <div class="card">
+        <h3>Safe Browsing</h3>
+        <p>
+          Avoid suspicious links, download software only from trusted sources,
+          and keep your browser updated.
+        </p>
+      </div>
+      <div class="card">
+            <h3>Phishing Attacks</h3>
+            <p>
+            Learn how attackers trick users through fake emails, messages, and
+            websites to steal sensitive information.
+            </p>
+      </div>
+      <div class="card">
+            <h3>Device Security</h3>
+            <p>
+            Keep your operating system and applications updated to protect against
+            known vulnerabilities.
+            </p>
+      </div>
+      </div>
+       
+    
+     
+  </div>
+  <h2 id="contact">Contact Us</h2>
+
+<form action="mailto:cyberawareness@gmail.com" method="post" enctype="text/plain">
+    <label>Name</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Message</label><br>
+    <textarea name="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+</form>
+<div id="statusSection" style="display:none; text-align:center; margin:40px">
+
+  <h2>Website Status</h2>
+
+  <p><strong>Website Name:</strong><span id="sitename"></span></p>
+  <p><strong>Security Status:</strong><span id="Securitystatus"></span></p>
+  <p><strong>Visitors Count:</strong><span id="visitorcount"></span></p>
+
+  <button onclick="increaseVisitors()">New Visitor,then click</button>
+
+</div>
+    
+
+    <footer>
+        
+    <p>© 2025 Cybersecurity Awareness | Stay Cyber Safe</p>
+  
+
+    </footer>
+    
+
+
+
+    <script src="javascript.js"></script>
+
+    
+</body>
+</html>
