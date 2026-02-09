@@ -1,0 +1,28 @@
+LOG START
+AR4V3N0X... 
+this is a security log file.
+Login attempt detected!
+Password changesd successfully...hurray!
+
+
+New login from unknown IP
+system is ready to hack!Be careful..
+New login from unknown IP
+system is ready to hack!Be careful..
+New login from unknown IP
+system is ready to hack!Be careful..
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected
+New login detected

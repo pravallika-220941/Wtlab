@@ -25,7 +25,7 @@ function validateLogin($conn) {
     }
 }
 
-/* ---------- CALL FUNCTION ---------- */
+
 validateLogin($conn);
 
 mysqli_close($conn);

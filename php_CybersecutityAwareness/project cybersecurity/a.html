@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <title>add</title>
+        <style>
+            .color{
+                background-color:green;
+                height: 100px;
+                /*margin-left:50px;
+                margin-top:30px*/
+            }
+            .form{
+                font-size:25px;
+                
+            }
+            .container{
+                display:flex;
+                border:1px solid black;
+                width:100%;
+            }
+           .container input{
+                flex:1;
+                border:none;
+                height:25px;
+               /* padding:8px;
+            outline:none;*/
+            }
+            .container button {
+                border:1px solid #555;
+                padding:3px 10px;
+                background-color: #ddd;
+                cursor:pointer;
+                margin-left:2px;
+            }
+            #
+        </style>
+    </head>
+    <body>
+    
+        <h1 class="color"> TODO LIST</h1>
+        <form id='add-box'>
+            <label class="form"><b>Add Items</b></label><BR>
+                <input type="text" id='task-input' size="70" style="height:20px">
+              
+          <input type="submit" style="background-color: black;color: white;"><br><br>
+          </form>  
+          <label class="form"><b>Tasks</b></label><br>
+            <div class="container" id='task-list'>
+            <input type="text">
+            <button type="button">EDIT</button>
+            <button type="button">DELETE</button>
+            </div>
+        <script>
+            let ti=document.getElementById('task-input');
+            let ab=document.getElementById('add-box');
+            let tl=document.getElementById('task-list');
+
+            ab.addEventListener('submit',function(e){
+                e.preventDefault();
+                let tT=ti.value.trim();
+                if(tT===""){
+                    alert("please enter task");
+                    return;
+                }
+                let taskDiv=document.createElement('div');
+                taskDiv.className="task-item";
+                let span=document.createElement('span');
+                span.textContent=tT;
+                let eb=document.createElement('button');
+                eb.textContent="EDIT";
+                eb.addEventListener('click',function(){
+                    let nt=prompt("edit task:",span.textContent);
+                    if(nt!==null && nt.trim()!==""){
+                        span.textContent=nt;
+                    }
+                });
+                let db=document.createElement('button');
+                db.textContent="DELETE";
+                db.addEventListener('click',function(){
+                    tl.removeChild(taskDiv);
+                });
+                taskDiv.appendChild(span);
+                 taskDiv.appendChild(eb);
+                  taskDiv.appendChild(db);
+                   tl.appendChild(taskDiv);
+                ti.value="";
+                ti.focus();
+            });
+            </script>
+    </body>
+    </html>
